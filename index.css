@@ -268,23 +268,25 @@ footer .contenedor-footer .social-icons img {
 }
 
 /*responsive*/
-
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: flex;
         height: 60px;
         text-align: auto;
         display: flex;
-        position: fixed;
-        justify-content: space-between;
     }
 
     .navbar a {
-        padding: 10px 15px;
+        padding: 0px 15px;
         width: 100%;
         box-sizing: border-box;
         text-align: left;
+        padding-top: 10px ;
+    }
+
+    .nav-derecha{
+        display: flex;
+        padding-top: 5px;
     }
 
     .contenedor {
