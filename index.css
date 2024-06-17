@@ -333,6 +333,7 @@ footer .contenedor-footer .social-icons img {
     .presentacion-nombre {
         font-size: 25px;
         padding-top: 40px;
+        z-index: 1;
     }
 
     .tabla {
