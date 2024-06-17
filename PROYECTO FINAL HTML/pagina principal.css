@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to left , #89b8bc, #645ebf, #344160) no-repeat;
+}
+
+.navbar { 
+    overflow: hidden; 
+    background-color: #333;   
+    position: fixed;   
+    top: 0;   
+    width: 100%;
+    height: 80px; 
+    z-index: 1;
+    font-family: sans-serif;
+}  
+    
+.navbar a {   
+    float: left;   
+    display: block;   
+    color: #f2f2f2;   
+    text-align: center;   
+    padding: 30px 16px;   
+    text-decoration: none;   
+    font-size: 17px; 
+}  
+
+.navbar a:hover {   
+    background: #ddd;   
+    color: black; 
+}  
+
+.nav-derecha {   
+    float: right; 
+    font-family: sans-serif;
+}
+
+
+/*article*/
+.contenedor-article{
+    width: 99%;
+    height: 200px;
+    color: white;
+}
+
+.contenedor-article form{
+    position: absolute;
+    left: 450px; 
+    top: 120px; 
+}
+/*presenacion nombre*/
+.presentacion-nombre{
+    font-size: 50px;
+    padding-top: 120px;
+    color: black;
+    font-family: cursive;
+}
+
+.presentacion-nombre h1:hover{
+    color: white;
+}
+
+/*buscador*/
+.contenedor-article form {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+.buscador {
+    flex: 1;
+}
+
+/*diseñamos el input de buscador*/
+input[type="search"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input[type="search"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/*contenedor aside y section*/
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/*aside*/
+.contenedor-aside {
+    order: 1; /* Asegura que el aside esté a la izquierda */
+    width: 25%;
+    box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: auto;
+    color: black;
+}
+
+.contenedor-h2{
+    background-color: #F0F0F0;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-right: 20px;
+    box-shadow:  0px 4px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+aside p{
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.aside {
+    flex: 1;
+    background-color: #F0F0F0;
+    padding-right: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    box-shadow:  0px 4px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+.evento, .testimonial {
+    background: #F0F0F0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid gray;
+}
+
+/*section*/
+.contenedor-section {
+    order: 2; /* Asegura que el section esté a la derecha*/
+    width: 75%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 90px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+section h2{
+    text-align: left;
+    font-size: 25px;
+}
+/*tablas*/
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    font-family: sans-serif;
+}
+.celda {
+    grid-column: span 4; /* Cada celda ocupa 4 columnas de las 12 totales */
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgb(235, 225, 225);
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+}
+.celda img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.celda img:hover{
+    transform: scale(1.1);
+}
+.celda h3 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+.celda p {
+    font-size: 0.9em;
+    color: black;
+    font-family: sans-serif;
+}
+.celda button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+}
+.celda button:hover {
+    background-color: #0056b3;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer .contenedor-footer .section {
+    margin: 10px 0;
+}
+footer .contenedor-footer .section a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer .contenedor-footer .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/*boton siscrivbirse*/
+.section form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+.section input, .section button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.section button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.section button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: flex;
+        height: 60px;
+        text-align: auto;
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 0px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        padding-top: 10px ;
+    }
+
+    .nav-derecha{
+        display: flex;
+        padding-top: 5px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .contenedor-aside, .contenedor-section {
+        width: 100%;
+    }
+
+    .tabla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-article form {
+        left: 10%;
+        width: 80%;
+    }
+
+    .presentacion-nombre {
+        font-size: 35px;
+        padding-top: 100px;
+    }
+
+    .celda {
+        grid-column: span 12;
+        width: 80%;
+        align-items: center;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .contenedor-article form {
+        left: 5%;
+        width: 90%;
+        top: 40px;
+    }
+
+    .presentacion-nombre {
+        font-size: 25px;
+        padding-top: 100px;
+        z-index: 1;
+    }
+
+    .tabla {
+        grid-template-columns: 1fr;
+    }
+
+    .section input, .section button {
+        padding: 8px;
+    }
+}
